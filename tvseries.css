@@ -7,8 +7,8 @@ body{
   z-index: -1;
     min-width: 115%;
     opacity: 0.1;
-    min-height: 300%;
-    background-repeat: repeat;
+    min-height: 200%;
+   /* background-repeat: repeat;*/
     background-image: url(https://image.freepik.com/free-vector/seamless-pattern-with-cinema-elements_225004-1155.jpg);    
     position: absolute;
 
@@ -238,7 +238,7 @@ span{
 }
 @media(max-width:450px){
   #background{
-    min-height: 570%;}
+    min-height: 670%;}
     .click1{font-size: x-large;}
   #u #l {
     width:50.333%;
