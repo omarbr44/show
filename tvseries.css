@@ -235,7 +235,7 @@ span{
   }  #search{left:125px}
 
 }
-@media(max-width:420px){
+@media(max-width:450px){
   #u #l {
     width:50.333%;
   }
