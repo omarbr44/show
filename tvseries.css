@@ -236,6 +236,9 @@ span{
 
 }
 @media(max-width:450px){
+  #background{
+    min-height: 570%;}
+    .click1{font-size: x-large;}
   #u #l {
     width:50.333%;
   }
