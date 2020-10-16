@@ -81,7 +81,7 @@ span{
 }
 .na:hover{  background-color: darkred;
 }
-.na{width: 26px;
+.na{width: 34px;
   position: absolute;
   height: 24px;
   border: 0px solid;
@@ -250,10 +250,7 @@ span{
     min-width: 120%;
     min-height: 120%;
   }
-  #blockblock{
-    min-width: 120%;
-    min-height: 120%;
-  }  
+  
   .na{right: 71px;}
   #u{padding-left: 95px;}
     #search{left:12px;
@@ -267,7 +264,7 @@ span{
     }
     #search{width: 50%;}
   }
-
+.qq{position: relative;}
 
 #di {
     width: 200px;
