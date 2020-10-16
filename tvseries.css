@@ -13,7 +13,10 @@ body{
     position: absolute;
 
 }
-
+form{
+  display: grid;
+  place-items: center;
+}
 #search{position: fixed;
   outline: none;
   font-family: monospace;
@@ -25,6 +28,13 @@ body{
   border-radius: 6px;
   top: 2px;
   z-index: 2;}
+  #dot{width: 20px;
+    height: 20px;
+    background: white;
+    z-index: 10;
+    margin-left: 833px;
+    margin-top: 7px;
+  position: fixed;}
 
 nav{height: 39px;
   z-index: 1;
@@ -230,6 +240,7 @@ span{
   #u #l {
     width:48.333%;
   }
+  #dot{margin-left: 509px}
   #background{
     min-height: 500%;
   }  #search{left:125px}
@@ -240,6 +251,7 @@ span{
   #u #l {
     width:50.333%;
   }
+  #dot{margin-left: 280px;}
   #blockword{left: 5px;
              top:320px;}
   #spbloc{font-size: 32px;}

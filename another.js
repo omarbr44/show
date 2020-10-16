@@ -86,16 +86,22 @@ for(let i=0;i<but.length;i++){
     document.querySelector('form').addEventListener('submit',e=>{
      e.preventDefault();                                              //it does not reload the page when pressing enter
     });
-
+    
+   
     search.addEventListener('keyup',e=>{            //e reffers to the eventlistener
     e.target.value.toLowerCase();
+  
     
     const val=document.getElementsByClassName('but1');
     for(let i=0;i<val.length;i++){
-        if (val[i].childNodes[0].textContent.toLowerCase().indexOf(e.target.value)!==-1)
+       
+        if (search.value==="")
         but[i].parentElement.parentElement.style.display='block';
-        else{        but[i].parentElement.parentElement.style.display='none';
+        else if (val[i].childNodes[0].textContent.toLowerCase().indexOf(e.target.value)!==-1)
+        but[i].parentElement.parentElement.style.display='block';
+        else {        but[i].parentElement.parentElement.style.display='none';
     }
+
 }
     },false);
 
