@@ -124,7 +124,7 @@ span{
     background-color: black;
     overflow: hidden;
     position: absolute;
-    animation: jj ease-in forwards 800ms 1000ms ;
+    animation: jj ease-in forwards 800ms 1100ms ;
 
 
   }
@@ -138,7 +138,7 @@ span{
     place-items: center;
     background-color: darkred;
     position: absolute;
-    animation: jj ease-in forwards 1000ms 1000ms ;
+    animation: jj ease-in forwards 1000ms 1100ms ;
     z-index: 101;
   }
  @keyframes jj{
@@ -247,7 +247,7 @@ span{
 
 
 }
-@media(max-width:680px){
+@media(max-width:380px){
   #u #l {
     width:50.333%;
   }
