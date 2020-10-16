@@ -1,0 +1,286 @@
+*{font-family: 'Sansita Swashed', cursive;}
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+#background{
+  z-index: -1;
+    min-width: 115%;
+    opacity: 0.1;
+    min-height: 300%;
+    background-repeat: repeat;
+    background-image: url(https://image.freepik.com/free-vector/seamless-pattern-with-cinema-elements_225004-1155.jpg);    
+    position: absolute;
+
+}
+
+#search{position: fixed;
+  outline: none;
+  font-family: monospace;
+  background-color: white;
+  width: 400px;
+  height: 34px;
+  left: 449px;
+  border: 3px solid whitesmoke;
+  border-radius: 6px;
+  top: 2px;
+  z-index: 2;}
+
+nav{height: 39px;
+  z-index: 1;
+  position: fixed;
+  left: -11px;
+  top: -1px;
+  background-image: linear-gradient(45deg, darkred,red,darkred);
+  width: 104%;
+  display: grid;
+  border-radius: 15px;
+  border: white 1px solid;
+}
+span{
+  font-size: x-large;
+  font-weight: bold;
+  display: inline-block;
+}
+
+
+#nav:hover,#nav:hover:before,#nav:hover:after{background-color: white;
+ cursor: pointer;}
+ #nav:hover > .na{background-color: darkred;}
+
+#nav{
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: darkred;
+  transform: rotate(45deg);
+  display: grid;
+    place-items: center;
+}
+#nav:before,
+ #nav:after{
+  position: absolute;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border-radius: 50%;
+    background-color: darkred;
+}
+#nav:before{
+  bottom: 0px;
+  left: -5px;
+}
+
+#nav:after{
+ top: -5px;
+ right: 0px;
+}
+.na:hover{  background-color: darkred;
+}
+.na{width: 26px;
+  position: absolute;
+  height: 24px;
+  border: 0px solid;
+  border-radius: 93px;
+  place-items: center;
+  display: grid;
+  outline: none;
+  top: 6px;
+  z-index: 1;
+  right: 110px;}
+  .return{
+    position: absolute;
+    width: 95px;
+    display: grid;
+    top: -6px;
+    outline: none;
+    color: aliceblue;
+    place-items: center;
+    font-size: 30px;
+    border: 0px;
+    left: 622px;
+    z-index: 1;
+    background: content-box;
+    height: 25px;
+  }
+  .block{
+    width: 102%;
+    margin:-10px ;
+    z-index: 100;
+    top:0px;
+    height: 140%;
+    display: grid;
+    place-items: center;
+    background-color: black;
+    overflow: hidden;
+    position: absolute;
+    animation: jj ease-in forwards 800ms 1000ms ;
+
+
+  }
+  #blockblock{
+    width: 102%;
+    margin:-10px ;
+    z-index: 100;
+    top:103%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background-color: darkred;
+    position: absolute;
+    animation: jj ease-in forwards 1000ms 1000ms ;
+    z-index: 101;
+  }
+ @keyframes jj{
+ 100%{top:-1111px;
+  ;
+}
+  }
+  @keyframes j{
+    
+    100%{top: 230px;
+   }
+     }
+   #blockword{
+    position: absolute;
+    width: 1000%;
+    height: 124px;
+    background:black;
+    z-index: 111;
+    top: 345px;
+   }
+    #spbloc:nth-child(1){animation: j 1s 0.1s ease-out both;}
+    #spbloc:nth-child(2){animation: j 1s 0.2s ease-out both;}
+    
+
+  #spbloc{
+    color: aliceblue;
+    top: 347px;
+    position: absolute;
+    font-size: 40px;
+    
+  }
+  
+  .favlist{
+    opacity: 1;
+    position: absolute;
+    background-color: antiquewhite;
+    transform: rotate(-45deg);
+    display: grid;
+    margin-top: 350px;
+    margin-right: -333px;  
+     place-items: center;
+    width: 117px;
+    list-style: none;
+    border-radius: 10px;
+    padding-left: 7px;
+    border-top-left-radius: 0px;
+  }
+  .click1{
+    cursor: pointer;
+    position: absolute;
+    margin-top: -30;
+    margin-left: 170px;
+    margin-bottom: 149px;
+    display: grid;
+    border: 3px black solid;
+    border-radius: 12px;
+    background-color: darkred;
+    color: white;
+    font-size: large;
+    outline: none;
+  }
+
+.div {
+  opacity: 0;
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  border: 0px solid gainsboro;
+  border-radius: 15px;
+  display: grid;
+  place-items: center;
+  transition: opacity ease 500ms ;
+  background-image: linear-gradient(45deg, darkred, black,transparent);
+  color: rgba(255, 255, 255,1);
+}.div:hover{  
+  opacity: 1;
+}
+
+
+#u2{
+  padding-top: 30px;
+}
+#u{
+  padding-left: 150px;
+  padding-top: 50px;
+ list-style: none;
+
+}
+#l{
+    padding-bottom: 100px;
+    line-height: 1.5em;
+    float: left;
+    display: inline;
+   
+}
+#u #l{    width: 33.333%;
+}
+@media( max-width:996px){
+  #u #l {
+    width:48.333%;
+  }
+  #background{
+    min-height: 500%;
+  }  #search{left:125px}
+
+
+}
+@media(max-width:680px){
+  #u #l {
+    width:50.333%;
+  }
+  #blockword{left: 5px;
+             top:320px;}
+  #spbloc{font-size: 32px;}
+  .na{right: 71px;}
+  #u{padding-left: 95px;}
+  #background{
+    min-height: 700%;}
+    #search{left:12px;
+      width:285px;
+                       }
+    .return{left:12px;}                   
+  }
+
+#di {
+    width: 200px;
+    height: 300px;
+    border: darkred solid 2px;
+    border-radius: 15px;
+}
+img{
+    height: 300px;
+   width: 200px;
+   border-radius: 15px;
+
+}
+p{
+    background-size: 200px;
+    display: contents;
+    place-items: center;
+    color: white;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.but1{ width: inherit;
+  height: 39px;
+  margin-top: 10px;
+   background-color: rgba(0,0,0 ,0.4);
+  border: 0;
+  outline: none;
+  border-left: 2px solid darkred;
+  display: grid;
+  place-items: center;
+}
